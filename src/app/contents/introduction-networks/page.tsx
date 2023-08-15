@@ -175,7 +175,7 @@ export default function introdução() {
             </p>
           </div>
           <div className="pt-4">
-            <h1 className="text-2xl font-bold mb-4">Componente de Perguntas e Respostas de Múltipla Escolha</h1>
+            <h1 className="text-2xl font-bold mb-4">Questões</h1>
             {questionList.map((question) => (
               <QuestionCardModal question={question} />
             ))}
