@@ -6,14 +6,6 @@ import Link from 'next/link'
 
 
 dayjs.locale(ptBr)
-
-interface Memory {
-  id: string
-  coverUrl: string
-  excerpt: string
-  createdAt: string
-}
-
 export default async function Home() {
   return (
     <main className='bg-white_100 h-screen w-screen overflow-x-hidden'>

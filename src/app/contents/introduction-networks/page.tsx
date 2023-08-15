@@ -1,9 +1,27 @@
+import QuestionCardModal from '@/components/QuestionsCardModal'
 import { ChevronLeft } from 'lucide-react'
 import Link from 'next/link'
-// import InfoCardModal from '@/components/InfoCardModal'
-// import rede from '../../assets/rede.jpg'
 
 export default function introdução() {
+  const questionList = [
+    {
+      case: 'Qual é o marco histórico discutido na apresentação do Professor Doutor Data?',
+      options: ['A invenção do primeiro telefone', 'O desenvolvimento do primeiro sistema operacional', 'A criação da ARPANET, a precursora da internet',
+        'A descoberta da eletricidade'],
+      answerIndex: 2,
+    },
+    {
+      case: 'Na simulação do modelo de comunicação, qual é o papel dos repetidores?',
+      options: ['Converter dados analógicos em digitais', 'Amplificar o sinal para estender a distância da transmissão', 'Criar endereços IP para os dispositivos conectados', 'Autenticar os dispositivos na rede'],
+      answerIndex: 1,
+    },
+    {
+      case: 'No contexto da simulação, qual é a função dos comutadores e roteadores?',
+      options: ['Criar backups dos dados transmitidos', 'Armazenar informações de login dos usuários', 'Controlar o tráfego de rede e encontrar o melhor caminho para os dados', 'Garantir a segurança da conexão sem fio'],
+      answerIndex: 2,
+    },
+  ];
+
   return (
     <div className="flex-1 flex-col gap-4 p-10 my-0 mx-auto flex">
       <Link
@@ -11,7 +29,7 @@ export default function introdução() {
         className="houver:text-gray-100 flex items-center gap-1 text-sm text-gray-200"
       >
         <ChevronLeft className="h-4 w-4" />
-        voltar à pagina de conteudos
+        voltar à pagina de conteúdos
       </Link>
 
       <section className='flex'>
@@ -57,10 +75,6 @@ export default function introdução() {
               Professor Doutor Data: Agora, para compreender melhor como a comunicação de dados funciona,
               imaginem cada camada do modelo como um andar de um prédio.
               As informações são processadas e passam de um andar para o outro até chegarem ao destino desejado.
-            </p>
-            <br />
-            <p>
-              Alunos: (assentem)
             </p>
             <br />
             <p>
@@ -159,6 +173,12 @@ export default function introdução() {
               E, em todas as suas futuras aventuras no mundo da tecnologia, eles lembrariam com carinho daquele dia especial com o
               Professor Doutor Data.
             </p>
+          </div>
+          <div className="pt-4">
+            <h1 className="text-2xl font-bold mb-4">Componente de Perguntas e Respostas de Múltipla Escolha</h1>
+            {questionList.map((question) => (
+              <QuestionCardModal question={question} />
+            ))}
           </div>
         </div>
         <div className='w-[23%]'></div>

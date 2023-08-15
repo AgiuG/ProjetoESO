@@ -1,7 +1,6 @@
 import Image, { StaticImageData } from 'next/image'
 
-
-interface InfoCardModalProps {
+interface IInfoCardModalProps {
   title: string;
   image: StaticImageData;
   description: string;
@@ -15,10 +14,10 @@ function InfoCardModal({
   description,
   link,
   conteudo
-}: InfoCardModalProps): JSX.Element {
+}: IInfoCardModalProps): JSX.Element {
   return (
     <a href={link} className='hover:opacity-75'>
-      <div className='rounded-b-3xl max-lg:mr-3 max-lg:ml-[0.1rem] max-w-[450px] max-lg:mx-auto h-auto bg-slate-200'>
+      <div className='rounded-b-3xl max-lg:mr-3 max-lg:ml-[0.1rem] max-w-[450px] max-lg:mx-auto h-auto bg-gray-50'>
         <div className=''>
           <Image
             src={image}

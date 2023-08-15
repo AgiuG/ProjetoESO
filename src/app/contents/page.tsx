@@ -20,7 +20,7 @@ export default function Matters() {
           <div className='w-full'>
             <div className='justify-center md:justify-start'>
               <h1 className="text-5xl font-bold mb-4">
-                Conteudos
+                Conteúdos
               </h1>
 
               <div className='flex gap-3 justify-between'>
