@@ -9,21 +9,6 @@ dayjs.locale(ptBr)
 export default async function Home() {
   return (
     <main className='bg-white_100 h-screen w-screen overflow-x-hidden'>
-      {/* <div className='pb-14'>
-        <div className='fixed w-full z-[999999] bg-white_100 bg-slate-200'>
-          <header className='container fade_in w-full flex items-center justify-between py-5 max-sm:px-7 px-14 bg-white_100'>
-            <nav className='w-full items-center justify-end gap-9 hmobile:flex'>
-              <div className='flex flex-col'>
-                <ul className='text-poppins_18 flex items-center gap-9 cursor-pointer relative fade_in opacity-100'>
-                  <li className=' text-black'>
-                    <button>Conteúdos</button>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </header>
-        </div>
-      </div> */}
       <div className='pt-7'>
         <div className="container w-full h-auto grid max-sm:flex gap-y-[4%] object-cover grid-cols-2 max-sm:flex-col m-auto">
           <div className='flex flex-col max-sm:order-1 xl:w-[82%] max-sm:px-7 px-28 justify-end relative  items-start  overflow-hidden pb-6'>
