@@ -1,7 +1,7 @@
 import { ChevronLeft } from 'lucide-react'
 import Link from 'next/link'
 import InfoCardModal from '@/components/InfoCardModal'
-import mago from '../../assets/mago.svg'
+import capaModulo1 from '../../assets/capaModulo1.png'
 import rede from '../../assets/rede.jpg'
 
 export default function Matters() {
@@ -26,7 +26,7 @@ export default function Matters() {
               <div className='flex gap-3 justify-between'>
                 <InfoCardModal
                   title='Magia Digital: A Jornada de Pedro por Cyberland'
-                  image={mago}
+                  image={capaModulo1}
                   description='Pedro, o jovem curioso de Cyberland, embarca em uma incrível jornada pela magia da tecnologia! 
                   Acompanhe-o enquanto descobre os segredos da comunicação de dados com a ajuda do enigmático Professor Doutor Data. 
                   Uma história repleta de aventuras, descobertas e trabalho em equipe, mostrando como a tecnologia conecta o mundo

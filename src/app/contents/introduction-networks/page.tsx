@@ -1,6 +1,14 @@
 import QuestionCardModal from '@/components/QuestionsCardModal'
 import { ChevronLeft } from 'lucide-react'
 import Link from 'next/link'
+import pedroImage from '../../../assets/pedro.png'
+import Image from 'next/image'
+import pedroEntusiasmado from '../../../assets/pedroEntusiasmado.png'
+import personagem2Entusiasmado from '../../../assets/personagem2Entusiasmado.png'
+import personagem3Entusiasmado from '../../../assets/personagem3Entusiasmada.png'
+import personagem2Falando from '../../../assets/personagem2Falando.png'
+import personagem3Falando from '../../../assets/personagem3Falando.png'
+import personagem4 from '../../../assets/personagem4.png'
 
 export default function introdução() {
   const questionList = [
@@ -33,7 +41,60 @@ export default function introdução() {
       </Link>
 
       <section className='flex'>
-        <div className='w-[23%]'></div>
+        <div className='w-[23%]'>
+          <div className="h-[61.3%] mr-6 mt-10 flex items-center">
+            <div className='h-[100%] ml-auto mr-2'>
+              <Image
+                src={personagem3Entusiasmado}
+                alt=""
+                className='w-16 h-16 relative top-[23.8%]'
+              />
+            </div>
+            <div className="w-4 h-full  rounded-xl bg-gradient-to-b from-red-500 via-yellow-500 to-blue-500" />
+            <div className='h-[100%]'>
+              <Image
+                src={pedroImage}
+                alt=""
+                className='w-20 h-20 relative top-[7%]'
+              />
+              <Image
+                src={pedroEntusiasmado}
+                alt=""
+                className='w-20 h-20 relative top-[15.8%]'
+              />
+              <Image
+                src={personagem2Entusiasmado}
+                alt=""
+                className='w-20 h-20 relative top-[17.2%]'
+              />
+              <Image
+                src={pedroImage}
+                alt=""
+                className='w-20 h-20 relative top-[45.7%]'
+              />
+              <Image
+                src={personagem3Falando}
+                alt=""
+                className='w-20 h-20 relative top-[50%]'
+              />
+              <Image
+                src={personagem2Falando}
+                alt=""
+                className='w-20 h-20 relative top-[50.1%]'
+              />
+              <Image
+                src={pedroEntusiasmado}
+                alt=""
+                className='w-20 h-20 relative top-[60.5%]'
+              />
+              <Image
+                src={personagem4}
+                alt=""
+                className='w-20 h-20 relative top-[62.5%]'
+              />
+            </div>
+          </div>
+        </div>
         <div className='w-[60%] pt-8'>
           <div className='mb-10 text-5xl font-bold leading-tight'>
             <h1>Magia Digital: A Jornada de Pedro por Cyberland</h1>
@@ -50,11 +111,13 @@ export default function introdução() {
               especialista em redes de comunicação de dados.
             </p>
             <br />
+            <br />
             <p>
               Professor Doutor Data: (com uma capa cheia de estrelas e segurando uma varinha de conexões mágicas)
               Bem-vindos, jovens ávidos por conhecimento!
               Hoje, embarcaremos juntos em uma emocionante jornada pela história da Internet.
             </p>
+            <br />
             <br />
             <p>
               Pedro: (entusiasmado) Mal posso esperar, Professor Data!
@@ -62,9 +125,11 @@ export default function introdução() {
               quando o Departamento de Defesa dos Estados Unidos criou a ARPANET, a primeira rede de computadores interligada.
             </p>
             <br />
+            <br />
             <p>
               Alunos: (maravilhados) Uau!
             </p>
+            <br />
             <br />
             <p>
               Pedro e seus colegas ficaram fascinados ao ver como a ARPANET evoluiu para a Internet que conhecemos hoje,
@@ -106,23 +171,28 @@ export default function introdução() {
               e os roteadores, encarregados de determinar a rota mais eficiente para que a mensagem chegasse ao prédio vizinho.
             </p>
             <br />
+            <br />
             <p>
               Pedro: (olhando para seus colegas) Vamos lá, pessoal! Temos uma mensagem importante para entregar.
               Com certeza conseguiremos!
             </p>
+            <br />
             <br />
             <p>
               Os dispositivos de rede começaram a colaborar, trabalhando em harmonia para transmitir a mensagem.
               Pedro enviou a mensagem para o primeiro servidor, que a recebeu prontamente e a repassou para o repetidor mais próximo.
             </p>
             <br />
+            <br />
             <p>
               Servidor 1: (entusiasmado) Recebendo a mensagem! Repassando ao repetidor!
             </p>
             <br />
+            <br />
             <p>
               Repetidor 1: (concentrado) Recebido! Amplificando o sinal e enviando ao comutador!
             </p>
+            <br />
             <br />
             <p>
               A mensagem percorreu o caminho, passando de dispositivo para dispositivo, enquanto o Professor Doutor Data explicava o papel de cada
