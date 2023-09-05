@@ -15,7 +15,7 @@ const baiJamjuree = BaiJamjuree({
 })
 
 export const metadata = {
-  title: 'ProjetoESO',
+  title: 'Val',
   description:
     'Um site de educação criada em React, Next.js, TailwindCSS e TypeScript',
 }
