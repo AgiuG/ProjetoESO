@@ -5,7 +5,7 @@ interface IInfoCardModalProps {
   image: StaticImageData;
   description: string;
   link?: string;
-  conteudo: string;
+  skillsList: Array<string>;
 }
 
 function InfoCardModal({
@@ -13,7 +13,7 @@ function InfoCardModal({
   image,
   description,
   link,
-  conteudo
+  skillsList
 }: IInfoCardModalProps): JSX.Element {
   return (
     <a href={link} className='hover:opacity-75'>
@@ -36,7 +36,11 @@ function InfoCardModal({
                   {description}
                 </p>
               </div>
-              <div className='sm:mb-5 text-purple-700'>{conteudo}</div>
+              <div className="pt-4 pb-2">
+                {skillsList.map((skill) => (
+                  <span className="inline-block border border-teal-500 text-teal-500 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">#{skill}</span>
+                ))}
+              </div>
             </div>
           </div>
         </div>

@@ -8,10 +8,18 @@ import Image from 'next/image'
 
 interface IQuestionCardModalProps {
   question: Question;
+  questionsAnswered: number;
+  setQuestionsAnswered: (value: number) => void;
+  score: number;
+  setScore: (value: number) => void;
 }
 
 function QuestionCardModal({
-  question
+  question,
+  questionsAnswered,
+  setQuestionsAnswered,
+  score,
+  setScore
 }: IQuestionCardModalProps): JSX.Element {
   const [selectedOption, setSelectedOption] = useState<number>();
   const [rigthResponse, setRigthResponse] = useState<boolean>(false);
@@ -23,8 +31,10 @@ function QuestionCardModal({
 
   function handleAnswer(question: Question) {
     setOpenResultModal(true)
+    setQuestionsAnswered(questionsAnswered + 1)
     if (selectedOption === question.answerIndex) {
       setRigthResponse(true)
+      setScore(score + 1)
     }
   }
 
@@ -78,10 +88,11 @@ function QuestionCardModal({
                   name={'input'}
                   value={option}
                   id={option}
+                  disabled={openResultModal}
                   onChange={() => handleOptionSelect(optionIndex)}
                   className='hover:cursor-pointer'
                 />
-                <div className='ml-6 hover:cursor-pointer'> {option}</div>
+                <div className='ml-6 hover:cursor-pointer'>{option}</div>
               </div>
             </label>
           ))}
